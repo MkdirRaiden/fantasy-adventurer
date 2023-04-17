@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Rancho&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 180vh;
+    overflow-x: hidden;
+    background: #020912;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px; /* The height is only seen on horizontal scrolling */
+    background-color: rgb(138, 138, 150);
+  }
+  
+  ::webkit:hover::-webkit-scrollbar-track {
+    background: rgba(7, 7, 7, 0.25);
+    padding: 2px;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000a15;
+    border-radius: 4px;
+  }
+
+.fog-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(27, 26, 26, 0.45) 50% , rgba(19, 32, 41, .75));
+    /* background-color: red; */
+}  
+
+.parallex i{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    scale: 2.5 2.5;
+    color: rgb(233, 159, 95);
+}
+.parallex i:hover{
+    cursor: pointer;
+    color: white;
+}
+.parallex{
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/vampbackground0.webp ) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .75s ease;
+    overflow: hidden;
+    /* z-index: 100000; */
+}
+#grass{
+    margin: 0 4px;
+    /* border: 2px solid red; */
+}
+#text{
+    /* font-family: 'Tilt Prism', cursive; */
+    font-family: 'Abril Fatface', cursive;
+    position: absolute;
+    translate: 0 -80px;
+    font-size: clamp(2.5rem, 8vw, 10rem);
+    color: #bf8932;
+    text-shadow: 2px 4px 5px #2d2410;
+    pointer-events: none;
+}
+.parallex img{
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 60%;
+    pointer-events: none;
+   
+}
+.parallex img#gate-left{
+    /* border: 1px solid white; */
+    /* position: fixed; */
+    translate: -282px;
+    transition: .25s ease;
+}
+.parallex img#gate-right{
+    /* border: 1px solid white; */
+    translate: 282px;
+    /* position: fixed; */
+    transition: .25s ease;
+}
+
+.about-me{
+    /* border: 1px solid red; */
+    position: relative;  
+    height: 140vh;
+    translate:0 18px ;
+    /* background: #020912; */
+    background:linear-gradient(#020912, rgb(38, 22, 9), rgb(2, 1, 0));
+    padding: 50px 100px;
+    padding-right: 100px;
+    overflow: hidden;
+    /* transition: 1s ease; */
+    /* pointer-events: none; */
+}
+.about-me h2{
+    font-family: 'Tilt Prism', cursive;
+    position: relative;
+    translate:-890px 290px; 
+    font-size: clamp(1.75rem, 4vw, 5rem);
+    color: #f9f9f9;
+    margin-bottom: 50px;
+}
+.about-me p{
+    cursor: pointer;
+    font-family: 'Handlee', cursive;
+    font-size: clamp(.45rem, 1.5vw, 2rem);
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+}
+.about-me :last-child{
+    margin-bottom: 20px;
+}
+.about-me img{
+    position: relative;
+    translate: 740px;
+    float: right;
+    margin-left: 30px;
+    border-radius: 4px;
+}
+.about-me #quote{
+    font-size:clamp(1rem, 3vw, 3rem) ;
+    font-family: 'Rancho', cursive;
+    color: rgb(125, 109, 109);
+    text-shadow:  1px 1px 8px red;
+}
+#paraBox{
+    /* border: 1px solid white; */
+    border-radius: 8px;
+    position: relative;
+    translate:0 920px;
+    /* overflow-y: hidden; */
+    
+}
+ @media screen and (max-width:850px){ 
+    .parallex{
+        background: url(images/vampbackground3.webp ) no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        transition: .75s ease;
+    }
+    #text{
+        color: #020912;
+        text-shadow: 2px 4px 5px #e45f2f;
+        pointer-events: none;
+    }
+    .parallex i{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        scale: 2.5 2.5;
+        color: #020912;
+    }
+    .about-me{
+        background:linear-gradient(#020912, #161d26);
+       
+       
+    }
+    .parallex img#gate-left{
+        /* border: 1px solid white; */
+        /* position: fixed; */
+        translate: -202px;
+        transition: .5s ease;
+    }
+    .parallex img#gate-right{
+        /* border: 1px solid white; */
+        translate: 202px;
+        /* position: fixed; */
+        transition: .5s ease;
+    }
+
+}
+@media screen and (max-width:550px){
+    .parallex{
+        background: url(images/vampirebackground2.webp ) no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        transition: .75s ease;
+    }
+    #text{
+        color: #92b8e9;
+        text-shadow: 2px 4px 5px #09102d;
+        pointer-events: none;
+    }
+    .parallex i{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        scale: 2.5 2.5;
+        color: #92b8e9;
+    }
+    
+    .about-me{
+        background:linear-gradient(#020912, #161d26);
+       
+    }
+    .parallex img#gate-left{
+        /* border: 1px solid white; */
+        /* position: fixed; */
+        translate: -102px;
+        transition: .5s ease;
+    }
+    .parallex img#gate-right{
+        /* border: 1px solid white; */
+        translate: 102px;
+        /* position: fixed; */
+        transition: .5s ease;
+    }
+    .fog-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse at center, rgba(27, 26, 26, 0.15) 50% , rgba(19, 32, 41, .25));
+        /* background-color: red; */
+    } 
+} 
