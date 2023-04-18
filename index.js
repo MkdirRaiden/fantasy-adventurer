@@ -144,7 +144,7 @@ const sectionButton = document.getElementById("section-button");
 
     let value = window.scrollY;
     console.log(value);
-    if(value == 692){
+    if(value == 690){
       gsap.from('footer', { duration: 1.5, y: '100%', ease: 'elastic', delay: '1.5' })
       gsap.from('.links', {duration: 1, opacity: 0, delay: 2.5, stagger: .35})
       
