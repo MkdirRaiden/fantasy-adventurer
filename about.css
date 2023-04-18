@@ -80,7 +80,7 @@ body{
     translate: 0 -80px;
     font-size: clamp(2.5rem, 8vw, 10rem);
     color: #bf8932;
-    text-shadow: 2px 4px 5px #2d2410;
+    /* text-shadow: 2px 4px 5px #2d2410; */
     pointer-events: none;
     text-shadow: 2px 2px 2px rgb(10, 3, 3);
 }
@@ -135,6 +135,7 @@ body{
     color: #fff;
     font-weight: 400;
     text-align: justify;
+    border-bottom-left-radius: 30px;
 }
 .about-me :last-child{
     margin-bottom: 20px;
@@ -145,6 +146,10 @@ body{
     float: right;
     margin-left: 30px;
     border-radius: 4px;
+    border: 3px solid #eabc9e;
+    box-shadow: 2px 2px 2px rgb(10, 3, 3);
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 .about-me #quote{
     font-size:clamp(1rem, 3vw, 3rem) ;
