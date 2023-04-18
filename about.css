@@ -97,13 +97,13 @@ body{
     /* border: 1px solid white; */
     /* position: fixed; */
     translate: -282px;
-    transition: .25s ease;
+    /* transition: .25s ease; */
 }
 .parallex img#gate-right{
     /* border: 1px solid white; */
     translate: 282px;
     /* position: fixed; */
-    transition: .25s ease;
+    /* transition: .25s ease; */
 }
 
 .about-me{
@@ -122,7 +122,7 @@ body{
 .about-me h2{
     font-family: 'Tilt Prism', cursive;
     position: relative;
-    translate:-890px 290px; 
+    translate:-892px 400px; 
     font-size: clamp(1.75rem, 4vw, 5rem);
     color: #f9f9f9;
     margin-bottom: 50px;
@@ -155,7 +155,7 @@ body{
     /* border: 1px solid white; */
     border-radius: 8px;
     position: relative;
-    translate:0 920px;
+    translate:0 720px;
     /* overflow-y: hidden; */
     
 }

@@ -20,25 +20,20 @@ gateRight.style.position = 'fixed';
 
 
 window.addEventListener('scroll',() => {
-    let value = window.scrollY;
-    if (value == 487){
-        console.log(value);
-    }
-    else{
+    let value = window.scrollY; 
 
-        
         text.style.marginTop = value * 2.5 + 'px';
         treeLeft.style.left = value * -1 + 'px';
         treeRight.style.left = value * 1 + 'px';
         gateLeft.style.left = value * 0.53 + 'px';
         gateRight.style.left = value * -0.53 + 'px'; 
-        myText.style.left = value * 1.83 + 'px';
-        paraBox.style.top = value * -1.35 + 'px';
-        myImage.style.right = value * 1.53 + 'px';
+        myText.style.left = value * 1.43 + 'px';
+        paraBox.style.top = value * -.5 + 'px';
+        myImage.style.right = value * 1.18 + 'px';
         grass.style.top = value * -.75 + 'px';
         aboutMe.style.top = value *-.75 + 'px';
         // variable.style.height = value * 0.5 + 'px';
 
-    }
+    
 })
 

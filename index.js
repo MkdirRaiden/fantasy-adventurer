@@ -24,7 +24,7 @@ const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 const parentContainer = document.getElementById("parent-container");
 
-gsap.from('body', { duration: 1, y: '-100%', ease: 'elastic', delay: '0' })
+gsap.from('body', { duration: 3, y: '-100%', ease: 'elastic', delay: '0' })
 gsap.from('#header', { duration: 1.5, y: '-100%', ease: 'bounce', delay: '3' })
 gsap.from('.userProfile', { duration: 1.5, x: '100%', ease: 'bounce', delay: '3' })
 
@@ -96,9 +96,9 @@ logRegExitBtn.addEventListener("click", ()=>{
 // sign up method
 signUpLink.addEventListener("click", ()=>{
  
-  login.style.translate = "0 -451px";
+  login.style.translate = "0 -610px";
   setTimeout(()=>{
-    register.style.translate = "0 -451px";
+    register.style.translate = "0 -610px";
   },250 )
  
 })
@@ -144,13 +144,13 @@ const sectionButton = document.getElementById("section-button");
 
     let value = window.scrollY;
     console.log(value);
-    if(value === 516){
+    if(value == 692){
       gsap.from('footer', { duration: 1.5, y: '100%', ease: 'elastic', delay: '1.5' })
       gsap.from('.links', {duration: 1, opacity: 0, delay: 2.5, stagger: .5})
       
     }
    
-    parallexImageContainer.style.marginTop= value * -.55 + "px";
+    parallexImageContainer.style.marginTop= value * -.3 + "px";
     adventure.style.marginBottom = value * 2.5 + "px";
     adventure1.style.marginBottom = value * 1 + "px";
     sectionButton.style.marginBottom = value * -1.5 + "px";

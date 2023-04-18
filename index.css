@@ -58,23 +58,23 @@ body{
 
 .logo{
   /* border: 1px solid; */
-  border-radius: 50%;
+  border-radius: 40%;
   position: absolute;
-  width: clamp(6em, 10vw, 20em);
-  height: clamp(5em, 2.5vw, 5em);
+  width: clamp(5em, 10vw, 20em);
+  /* height: clamp(2.5em, 7.5vh, 10em); */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  translate: 340px 50px;
-  animation: ufoAnimationMove 3s ease-out  forwards , ufoAnimation 6s linear infinite 3s;
+  translate: 450px 90px;
+  animation: ufoAnimationMove 2.5s ease-out  forwards .5s, ufoAnimation 6s linear infinite 3s;
   margin-right: 4px;
   z-index: 1000;
   scale: .15 .15;
 }
 .logo img{
-  width: 85%;
-  height: 85%;
+  width: 90%;
+  height: 70%;
   animation: imageAnimation 4s linear infinite 4s reverse;
   object-fit: fill;
   transition: .75s;
@@ -82,13 +82,13 @@ body{
 @keyframes ufoAnimationMove{
   35%{
     rotate: 5deg;
-    translate: 240px 100px;
+    translate: 280px 150px;
     scale: .23 .23;  
   } 
   85%{
     rotate: -10deg;
-    translate: 460px 200px;
-    scale:.55.55;
+    translate: 620px 250px;
+    scale:.35.35;
   }
   100%{
     rotate: -25deg;
@@ -98,7 +98,7 @@ body{
 }
 @keyframes ufoAnimation{
   25%{
-    transform: translateY(-4px);
+    transform: translateY(-8px);
   }
   75%{
     transform: translateY(4px);
@@ -115,7 +115,7 @@ body{
 .logo:hover{
   cursor: pointer;
   animation-play-state: paused;
-  box-shadow: -20px 120px 40px skyblue;
+  box-shadow: -30px 160px 40px skyblue;
 }
 
 .toolbar{
@@ -130,7 +130,7 @@ body{
   left: 10px;
   border-radius: 6px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -231,7 +231,7 @@ body{
 nav a{
   font-family: 'Abril Fatface', cursive;
   position: relative;
-  font-size: 1.15em;
+  font-size: 1.35em;
   text-shadow: 0 0 6px rgb(9, 9, 10);
   color: #f1eded;
   text-decoration: none;
@@ -275,7 +275,7 @@ nav a:hover::after, nav a.active::after{
   position: relative;
   opacity: 75%;
   width: 250px;
-  height: 36px;
+  height: 40px;
   background: transparent;
   border: 2px solid rgba(251, 251, 251, 0.7);
   border-radius: 8px;
@@ -370,13 +370,13 @@ nav a:hover::after, nav a.active::after{
 
 .userProfile{
   position:absolute;
-  top: -12px;
-  right: -1px;
+  top: -4px;
+  right: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  width: 100px;
+  width: clamp(6em, 8vw, 15em);
+  height: 96%;
   overflow: hidden;
   border-bottom-left-radius: 40px;
   opacity: 65%;
@@ -495,7 +495,7 @@ section button i{
   width: 100%;
   min-height: 100vh;
   left: 0;
-  top: 800px;
+  top: 900px;
   background: url(images/space09.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
@@ -623,7 +623,7 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
   /* border: 1px solid white; */
   background-color: rgba(39, 6, 6, 0.25);
   border-top: 1px solid rgb(97, 108, 112);
@@ -663,7 +663,7 @@ footer .footer-icons{
   flex-direction: row;
 }
 #copyright h5{
-  font-size:1em;
+  font-size:1.5em;
   font-family: 'Abril Fatface', cursive;
   color: rgba(184, 99, 94, 0.74);
 }
@@ -751,7 +751,7 @@ footer .footer-icons{
   opacity: 100%;
 }
 .content .websitedLogo{
-  font-size: 2.5em;
+  font-size: 3em;
   font-family: 'Tilt Prism', cursive;
   color: rgb(247, 246, 245);
   text-shadow: 0 2px 2px rgb(2, 2, 2);
@@ -816,7 +816,7 @@ footer .footer-icons{
 }
 
 .login-header{
-  font-size: 2em;
+  font-size: 3em;
   font-family: cursive;
 }
 .inputBox input{
@@ -824,7 +824,7 @@ footer .footer-icons{
   height:100%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   background: transparent;
   color: #fff;
   font-family: cursive;
@@ -848,7 +848,7 @@ footer .footer-icons{
   left: 0;
   top:40%;
   transform: translateY(-50%);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   pointer-events: none;
   transition: .5s ease;
@@ -928,7 +928,7 @@ footer .footer-icons{
   scale: .95;
 }
 .paraBox{
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   margin-top: 12px;
   display: flex;
@@ -938,7 +938,7 @@ footer .footer-icons{
   text-shadow: 0 0 2px black;
 }
 .paraBox a{
-  font-size: 14px;
+  font-size: 18px;
   color: white;
   margin-left: 4px;
   font-family: cursive;
