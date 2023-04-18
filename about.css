@@ -82,6 +82,7 @@ body{
     color: #bf8932;
     text-shadow: 2px 4px 5px #2d2410;
     pointer-events: none;
+    text-shadow: 2px 2px 2px rgb(10, 3, 3);
 }
 .parallex img{
     /* border: 1px solid white; */
@@ -130,7 +131,7 @@ body{
 .about-me p{
     cursor: pointer;
     font-family: 'Handlee', cursive;
-    font-size: clamp(.45rem, 1.5vw, 2rem);
+    font-size: clamp(.65rem, 1.5vw, 2rem);
     color: #fff;
     font-weight: 400;
     text-align: justify;
@@ -155,11 +156,11 @@ body{
     /* border: 1px solid white; */
     border-radius: 8px;
     position: relative;
-    translate:0 720px;
+    translate:0 920px;
     /* overflow-y: hidden; */
     
 }
- @media screen and (max-width:850px){ 
+ @media screen and (max-width:950px){ 
     .parallex{
         background: url(images/vampbackground3.webp ) no-repeat;
         background-position: center;
@@ -187,14 +188,14 @@ body{
     .parallex img#gate-left{
         /* border: 1px solid white; */
         /* position: fixed; */
-        translate: -202px;
-        transition: .5s ease;
+        translate: -302px;
+        /* transition: .5s ease; */
     }
     .parallex img#gate-right{
         /* border: 1px solid white; */
-        translate: 202px;
+        translate: 302px;
         /* position: fixed; */
-        transition: .5s ease;
+        /* transition: .5s ease; */
     }
 
 }
@@ -226,14 +227,14 @@ body{
     .parallex img#gate-left{
         /* border: 1px solid white; */
         /* position: fixed; */
-        translate: -102px;
-        transition: .5s ease;
+        translate: -252px;
+        /* transition: .5s ease; */
     }
     .parallex img#gate-right{
         /* border: 1px solid white; */
-        translate: 102px;
+        translate: 252px;
         /* position: fixed; */
-        transition: .5s ease;
+        /* transition: .5s ease; */
     }
     .fog-container {
         position: absolute;

@@ -23,15 +23,15 @@ window.addEventListener('scroll',() => {
     let value = window.scrollY; 
 
         text.style.marginTop = value * 2.5 + 'px';
-        treeLeft.style.left = value * -1 + 'px';
-        treeRight.style.left = value * 1 + 'px';
+        treeLeft.style.left = value * -.75 + 'px';
+        treeRight.style.left = value * .75 + 'px';
         gateLeft.style.left = value * 0.53 + 'px';
         gateRight.style.left = value * -0.53 + 'px'; 
-        myText.style.left = value * 1.43 + 'px';
-        paraBox.style.top = value * -.5 + 'px';
-        myImage.style.right = value * 1.18 + 'px';
-        grass.style.top = value * -.75 + 'px';
-        aboutMe.style.top = value *-.75 + 'px';
+        myText.style.left = value * 1.265 + 'px';
+        paraBox.style.top = value * -.75 + 'px';
+        myImage.style.right = value * 1.05 + 'px';
+        grass.style.top = value * -.5 + 'px';
+        aboutMe.style.top = value *-.55 + 'px';
         // variable.style.height = value * 0.5 + 'px';
 
     

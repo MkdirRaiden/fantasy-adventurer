@@ -67,7 +67,7 @@ body{
   align-items: center;
   overflow: hidden;
   translate: 450px 90px;
-  animation: ufoAnimationMove 2.5s ease-out  forwards .5s, ufoAnimation 6s linear infinite 3s;
+  animation: ufoAnimationMove 2.5s ease-out  forwards .5s, ufoAnimation 4s linear infinite 3s;
   margin-right: 4px;
   z-index: 1000;
   scale: .15 .15;
@@ -75,7 +75,7 @@ body{
 .logo img{
   width: 90%;
   height: 70%;
-  animation: imageAnimation 4s linear infinite 4s reverse;
+  animation: imageAnimation 10s linear infinite 4s reverse;
   object-fit: fill;
   transition: .75s;
 }
@@ -98,10 +98,10 @@ body{
 }
 @keyframes ufoAnimation{
   25%{
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
   75%{
-    transform: translateY(4px);
+    transform: translateY(8px);
   } 
 }
 @keyframes imageAnimation{
@@ -114,7 +114,6 @@ body{
 }
 .logo:hover{
   cursor: pointer;
-  animation-play-state: paused;
   box-shadow: -30px 160px 40px skyblue;
 }
 
@@ -379,6 +378,7 @@ nav a:hover::after, nav a.active::after{
   height: 96%;
   overflow: hidden;
   border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
   opacity: 65%;
 }
 .userProfile img{
@@ -409,7 +409,7 @@ nav a:hover::after, nav a.active::after{
 }
 @keyframes explorAnimation{
   50%{
-    transform: translateY(4px);
+    transform: translateY(8px);
   }
 }
 
@@ -502,8 +502,10 @@ section button i{
 }
 
 .slide-show-container{
-  width: 50%;
-  height: 62.5vh;
+  min-width: 400px;
+  width: 55vw;
+  min-height: 250px;
+  height: 33vw;
   border: 2px solid skyblue;
   position: absolute;
   left: 4%;
@@ -511,6 +513,16 @@ section button i{
   border-radius: 4px;
   transition: .75s opacity ease;
   overflow: hidden;
+}
+@media (orientation: portrait) {
+  .slide-show-container{
+    left: 50%;
+    top: 2%;
+    width: 80vw;
+    height: 50vw;
+    translate: -50%;
+  }
+  
 }
 
 .carousel {
@@ -536,12 +548,7 @@ section button i{
   height: 100%;
   object-fit: cover;
 }
-.slide > video{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .carousel > ul {
   margin: 0;
   padding: 0;
@@ -588,14 +595,23 @@ section button i{
   text-align: justify;
   overflow: hidden;
 }
+@media (orientation: portrait) {
+  .space-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    
+  
+  }
+} 
 .space-content h1{
-  font-size: clamp(.5em, 4vw, 5em);
+  font-size: clamp(1.15em, 4vw, 5em);
   font-family: 'Tilt Prism', cursive;
   /* font-family: 'Rubik Pixels', cursive; */
   text-shadow: 1px 1px 2px black;
 }
 .space-content h3{
-  font-size: clamp(.5em, 2.5vw, 3em);
+  font-size: clamp(1.1em, 2.5vw, 3em);
   font-family: 'Tilt Prism', cursive;
   text-shadow: 1px 1px 2px black;
 }
@@ -608,7 +624,7 @@ section button i{
   color: #fff;
 }
 .space-content p{
-  font-size:clamp(.25em, 1.5vw, 1.5em);
+  font-size:clamp(.75em, 1.5vw, 1.5em);
   font-family: 'Abril Fatface', cursive;
   color: rgb(214, 209, 209);
   transition: 2s ease;
@@ -638,7 +654,7 @@ footer .footer-icons{
   gap: .25em;
   justify-content: flex-start;
   align-items: center;
-  font-size: clamp(1em, 2.5vw, 3em);
+  font-size: clamp(1.75em, 2.5vw, 3em);
   padding-left: 1em; 
 }
 .footer-icons i{

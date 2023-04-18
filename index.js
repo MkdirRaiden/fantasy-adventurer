@@ -24,7 +24,7 @@ const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 const parentContainer = document.getElementById("parent-container");
 
-gsap.from('body', { duration: 3, y: '-100%', ease: 'elastic', delay: '0' })
+gsap.from('body', { duration: 3.5, y: '-100%', ease: 'elastic', delay: '0' })
 gsap.from('#header', { duration: 1.5, y: '-100%', ease: 'bounce', delay: '3' })
 gsap.from('.userProfile', { duration: 1.5, x: '100%', ease: 'bounce', delay: '3' })
 
@@ -146,7 +146,7 @@ const sectionButton = document.getElementById("section-button");
     console.log(value);
     if(value == 692){
       gsap.from('footer', { duration: 1.5, y: '100%', ease: 'elastic', delay: '1.5' })
-      gsap.from('.links', {duration: 1, opacity: 0, delay: 2.5, stagger: .5})
+      gsap.from('.links', {duration: 1, opacity: 0, delay: 2.5, stagger: .35})
       
     }
    
