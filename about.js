@@ -27,11 +27,11 @@ window.addEventListener('scroll',() => {
         treeRight.style.left = value * .75 + 'px';
         gateLeft.style.left = value * 0.53 + 'px';
         gateRight.style.left = value * -0.53 + 'px'; 
-        myText.style.left = value * 1.265 + 'px';
-        paraBox.style.top = value * -.75 + 'px';
-        myImage.style.right = value * 1.05 + 'px';
-        grass.style.top = value * -.5 + 'px';
-        aboutMe.style.top = value *-.55 + 'px';
+        myText.style.left = value * 1.306 + 'px';
+        paraBox.style.top = value * -.76 + 'px';
+        myImage.style.right = value * 1.08 + 'px';
+        grass.style.top = value * -.6 + 'px';
+        aboutMe.style.top = value * -.6 + 'px';
         // variable.style.height = value * 0.5 + 'px';
 
     
