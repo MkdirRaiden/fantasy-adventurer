@@ -13,9 +13,11 @@
     margin: 0;
 }
 body{
-    height: 180vh;
+    min-height: 100vh;
     overflow-x: hidden;
     background: #020912;
+    border: 2px soid white;
+    height: auto;
 }
 
 ::-webkit-scrollbar {
@@ -70,8 +72,9 @@ body{
     /* z-index: 100000; */
 }
 #grass{
-    margin: 0 4px;
+    margin: 0 2px;
     /* border: 2px solid red; */
+    translate: 0 -16px;
 }
 #text{
     /* font-family: 'Tilt Prism', cursive; */
@@ -90,7 +93,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 60%;
+    min-height: 50%;
     pointer-events: none;
    
 }
@@ -108,22 +111,17 @@ body{
 }
 
 .about-me{
-    /* border: 1px solid red; */
+    
     position: relative;  
-    height: 140vh;
-    translate:0 18px ;
-    /* background: #020912; */
+    height: 100vh;
     background:linear-gradient(#020912, rgb(38, 22, 9), rgb(2, 1, 0));
     padding: 50px 100px;
-    padding-right: 100px;
-    overflow: hidden;
-    /* transition: 1s ease; */
-    /* pointer-events: none; */
+    
 }
 .about-me h2{
     font-family: 'Tilt Prism', cursive;
     position: relative;
-    translate:-892px 400px; 
+    translate: 0 120px;
     font-size: clamp(1.75rem, 4vw, 5rem);
     color: #f9f9f9;
     margin-bottom: 50px;
@@ -131,6 +129,7 @@ body{
 .about-me p{
     cursor: pointer;
     font-family: 'Handlee', cursive;
+    
     font-size: clamp(.65rem, 1.5vw, 2rem);
     color: #fff;
     font-weight: 400;
@@ -142,9 +141,9 @@ body{
 }
 .about-me img{
     position: relative;
-    translate: 740px;
-    float: right;
     margin-left: 30px;
+    float: right;
+  
     border-radius: 4px;
     border: 3px solid #eabc9e;
     box-shadow: 2px 2px 2px rgb(10, 3, 3);
@@ -158,10 +157,11 @@ body{
     text-shadow:  1px 1px 8px red;
 }
 #paraBox{
-    /* border: 1px solid white; */
+    translate: 0 120px;
+    
     border-radius: 8px;
     position: relative;
-    translate:0 920px;
+   
     /* overflow-y: hidden; */
     
 }

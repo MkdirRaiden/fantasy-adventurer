@@ -24,7 +24,6 @@ const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 const parentContainer = document.getElementById("parent-container");
 
-gsap.from('body', { duration: 1.25, y: '100%', ease: 'power3', delay: .15 })
 gsap.from('#header', { duration: 1.5, y: '-100%', ease: 'bounce', delay: '3' })
 gsap.from('.userProfile', { duration: 1.5, x: '100%', ease: 'bounce', delay: '3' })
 
